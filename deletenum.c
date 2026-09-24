@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int numbers[] = {10, 20, 30, 40, 50};
+	int size = 5;
+	int pos = 2;
+	int i;
+
+	for (i = pos; i < size - 1; i++)
+	{
+		numbers[i] = numbers[i + 1];
+	}
+	size--;
+
+	for (i = 0; i < size; i++)
+	{
+		printf("%d ", numbers[i]);
+	}
+
+	return 0;
+}
